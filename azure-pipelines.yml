@@ -8,6 +8,10 @@ trigger:
 
 pool:
   name: Default
+  demands:
+  - msbuild
+  - visualstudio
+  - vstest
 
 variables:
   solution: '**/*.sln'
